@@ -131,5 +131,24 @@ in
                     surround-nvim
                     ];
         };
+
+        git = {
+            enable = true;
+            delta = {
+                enable = true;
+                options = {
+                    navigate = true;
+                    line-numbers = true;
+                    syntax-theme = "GitHub";
+                };
+            };
+            userEmail = "michael@guerillatactics.co.uk";
+            userName = "mwagg";
+            extraConfig = {
+                core = {
+                    whitespace = "tab-in-indent,tabwidth=2";
+                };
+            };
+        };
     };
 }
