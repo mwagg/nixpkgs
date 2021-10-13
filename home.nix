@@ -22,6 +22,7 @@ in
             htop
             bat
             nix-prefetch-github
+            fd
         ];
 
         sessionVariables = {
