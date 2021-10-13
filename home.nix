@@ -19,9 +19,9 @@ in
 
         packages = with pkgs; [
             ripgrep
-                htop
-                bat
-                nix-prefetch-github
+            htop
+            bat
+            nix-prefetch-github
         ];
 
         sessionVariables = {
