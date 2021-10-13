@@ -155,5 +155,10 @@ in
             enable = true;
             enableFishIntegration = true;
         };
+
+        starship = {
+            enable = true;
+            enableFishIntegration = true;
+        };
     };
 }
