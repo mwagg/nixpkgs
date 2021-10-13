@@ -24,6 +24,10 @@ in
                 nix-prefetch-github
         ];
 
+        sessionVariables = {
+            EDITOR = "nvim";
+        };
+
         stateVersion = "21.11";
     };
 
