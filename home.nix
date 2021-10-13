@@ -23,6 +23,7 @@ in
             bat
             nix-prefetch-github
             fd
+            tldr
         ];
 
         sessionVariables = {
