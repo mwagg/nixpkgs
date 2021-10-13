@@ -150,5 +150,10 @@ in
                 };
             };
         };
+
+        autojump = {
+            enable = true;
+            enableFishIntegration = true;
+        };
     };
 }
