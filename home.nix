@@ -25,6 +25,7 @@ in
             fd
             tldr
             awscli
+            bitwarden-cli
         ];
 
         sessionVariables = {
