@@ -26,6 +26,7 @@ in
             tldr
             awscli
             bitwarden-cli
+            
         ];
 
         sessionVariables = {
@@ -163,6 +164,10 @@ in
         starship = {
             enable = true;
             enableFishIntegration = true;
+        };
+
+        gpg = {
+            enable = true;
         };
     };
 }
