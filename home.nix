@@ -24,6 +24,7 @@ in
             nix-prefetch-github
             fd
             tldr
+            awscli
         ];
 
         sessionVariables = {
