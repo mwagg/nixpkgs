@@ -52,6 +52,7 @@ configure_format_on_save("lua", {"*.lua"})
 
 --  ** Nix **
 lspconfig.rnix.setup({capabilities = capabilities, cmd = {"@rnix_lsp@/bin/rnix-lsp"}, on_attach = common_on_attach})
+configure_format_on_save("Nix", {"*.nix"})
 
 -- ** Terraform **
 lspconfig.terraformls.setup({
