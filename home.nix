@@ -26,8 +26,8 @@ in
             tldr
             awscli
             bitwarden-cli
-            
             gh
+            terraform
         ];
 
         sessionVariables = {
