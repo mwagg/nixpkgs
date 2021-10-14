@@ -19,6 +19,7 @@
     ga = "git add $argv";
     gc = "git commit -vq $argv";
     gsk = "git add -u .";
+    gl = "git lg $argv";
   };
 
   functions = {
