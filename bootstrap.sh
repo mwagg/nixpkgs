@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -e
+
 if [ -e '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh' ]; then
   . '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh'
 fi
@@ -20,5 +22,5 @@ type home-manager || {
 
 SHELL_LINE="$HOME/.nix-profile/bin/fish"
 
-grep -qF "$SHELL_LINE" "/etc/shells"  || echo "$SHELL_LINE" | sudo tee --append "/etc/shells"
+grep -qF "$SHELL_LINE" "/etc/shells"  || echo "$SHELL_LINE" | sudo tee -a "/etc/shells"
 chsh -s "$HOME/.nix-profile/bin/fish"
