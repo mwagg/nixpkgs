@@ -15,6 +15,7 @@
       bitwarden-cli
       gh
       terraform
+      postgresql
     ];
 
     sessionVariables = {
