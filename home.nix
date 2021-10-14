@@ -27,6 +27,7 @@ in
             awscli
             bitwarden-cli
             
+            gh
         ];
 
         sessionVariables = {
