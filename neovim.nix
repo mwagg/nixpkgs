@@ -15,12 +15,13 @@ in
   enable = true;
 
   extraConfig = with pkgs; ''
-        source ${pkgs.substituteAll {
-            src = ./config/neovim/theme.vim;
-        }}
+    source ${pkgs.substituteAll {
+        src = ./config/neovim/theme.vim;
+    }}
     luafile ${pkgs.substituteAll {
         src = ./config/neovim/lua/init.lua;
     }}
+
     luafile ${pkgs.substituteAll {
         src = ./config/neovim/lua/lsp.lua;
         rnix_lsp = rnix-lsp;
@@ -30,7 +31,6 @@ in
         prettier = nodePackages.prettier;
         eslint = nodePackages.eslint;
         efm = efm-langserver;
-        luaform = luaformatter;
         shfmt = shfmt;
         shellcheck = shellcheck;
         solargraph = rubyPackages.solargraph;
