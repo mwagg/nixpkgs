@@ -16,6 +16,7 @@
       gh
       terraform
       postgresql
+      direnv
     ];
 
     sessionVariables = {
