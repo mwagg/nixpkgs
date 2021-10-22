@@ -22,6 +22,10 @@
     gl = "git lg $argv";
   };
 
+  shellInit = ''
+    direnv hook fish | source
+  '';
+
   functions = {
     redshift = ''
       set port (random 10000 20000)
